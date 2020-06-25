@@ -2,8 +2,7 @@
 # ansible winserver -m win_ping
 
 - name: Example from an Ansible Playbook
+  hosts: all
+  Tasks:
+    -name: Ping Windows
   win_ping:
-
-- name: Induce an exception to see what happens
-  win_ping:
-    data: crash
