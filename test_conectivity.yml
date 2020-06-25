@@ -1,6 +1,3 @@
-# Test connectivity to a windows host
-# ansible winserver -m win_ping
-
 - name: Example from an Ansible Playbook
   hosts: all
   Tasks:
