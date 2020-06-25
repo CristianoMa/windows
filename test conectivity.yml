@@ -4,5 +4,5 @@
 - name: Example from an Ansible Playbook
   hosts: all
   Tasks:
-    -name: Ping Windows
-  win_ping:
+    - name: Ping Windows
+      win_ping:
