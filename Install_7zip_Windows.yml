@@ -3,5 +3,5 @@
   tasks:
     - name: Restart Spooler
       win_service:
-      name: spooler
-      state: restarted
+        name: spooler
+        state: restarted
