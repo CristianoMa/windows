@@ -1,5 +1,5 @@
 - name: Example from an Ansible Playbook
   hosts: all
-  Tasks:
+  tasks:
     - name: Ping Windows
-      win_ping: present
+      win_ping:
