@@ -1,0 +1,7 @@
+- name: Stop Windows Spooler service
+  hosts: all
+  Tasks:
+    - name: Restart a service
+      win_service:
+        name: spooler
+        state: stop
