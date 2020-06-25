@@ -2,6 +2,6 @@
   hosts: all
   tasks:
     - name: Restart Spooler
-       win_service:
-       name: spooler
-       state: restarted
+      win_service:
+      name: spooler
+      state: restarted
