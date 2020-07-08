@@ -1,0 +1,10 @@
+- name: create a Windows user
+  hosts: win
+  tasks:
+     - name: Create Windows User
+       win_user:
+         name: linda
+         password: "Set4Now!Set4Now!"
+         state: present
+         groups:
+            - users
