@@ -13,7 +13,7 @@ steps:
 - script: Stop IIS Service!
   displayName: 'Stop W3SVC Service'
 
-tasks:
+task:
     - name: Restart a service
       win_service:
         name: W3SVC
