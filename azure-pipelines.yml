@@ -1,0 +1,21 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: Stop IIS Service!
+  displayName: 'Stop W3SVC Service'
+
+tasks:
+    - name: Restart a service
+      win_service:
+        name: W3SVC
+        state: stop
+
