@@ -14,6 +14,14 @@ steps:
   displayName: 'Stop W3SVC Service'
 
 task:
+- task: AzureFunctionApp@1
+  inputs:
+    appType: 'functionApp'
+    appName: 
+    deployToSlotOrASE: true
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
     - name: Restart a service
       win_service:
         name: W3SVC
