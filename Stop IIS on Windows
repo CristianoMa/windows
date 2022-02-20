@@ -1,0 +1,8 @@
+- name: Stop WebServices on Windows W3SVC
+  hosts: Machine01
+  tasks:
+    - name: Restart a service
+      win_service:
+        name: W3SVC
+        state: Stop
+# this is a comment test    
